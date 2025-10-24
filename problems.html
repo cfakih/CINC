@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Problems Salesloft Cannot Fix - CINC Business Case</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/outreach-theme.css">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CINC</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Executive Summary</a>
+                <a href="problems.html" class="nav-link active">Problems</a>
+                <a href="stakeholders.html" class="nav-link">Stakeholders</a>
+                <a href="solution.html" class="nav-link">Solution</a>
+                <a href="roi.html" class="nav-link">ROI</a>
+                <a href="implementation.html" class="nav-link">Implementation</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>The Problems Salesloft Cannot Fix</h1>
+            <p class="page-subtitle">Through seven demos with every business unit, we documented fundamental platform limitations that cannot be solved through configuration, training, or vendor support. These aren't bugs—they're architectural constraints.</p>
+        </div>
+    </section>
+
+    <!-- Problem #1: Bilateral Sync Failure -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">1</div>
+                <div class="problem-title">
+                    <h2>Bilateral Sync Failure</h2>
+                    <p class="problem-subtitle">One-way integration requiring manual imports "a few times a day"</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="current-state">
+                    <h3>Current State</h3>
+                    <p>SDRs and BDRs spend 15-30 minutes daily reconciling data between platforms. One-way integration requiring manual imports "a few times a day" (Crysta's words).</p>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">1,083</div>
+                        <div class="impact-label">hours annually</div>
+                        <div class="impact-description">across 13 SDR/BDRs</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">$27,075</div>
+                        <div class="impact-label">per year</div>
+                        <div class="impact-description">in pure labor waste</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Multiple</div>
+                        <div class="impact-label">times per day</div>
+                        <div class="impact-description">manual reconciliation</div>
+                    </div>
+                </div>
+
+                <div class="quote-block">
+                    <div class="quote-text">"Black hole in reporting... automations are down."</div>
+                    <div class="quote-author">— Crysta Ostiguy</div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Architecture limitation. One-way sync is the platform design.</p>
+                </div>
+
+                <div class="video-resource">
+                    <a href="https://hello.outreach.io/s/YblLmL0rUX4" class="video-link" data-title="Automated Inbound Lead Flow">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Automated Inbound Lead Flow</div>
+                                <div class="video-duration">5 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #2: Pipeline Management Paralysis -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">2</div>
+                <div class="problem-title">
+                    <h2>Pipeline Management Paralysis</h2>
+                    <p class="problem-subtitle">Hundreds of opportunities stuck in "evaluating" stage</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="current-state">
+                    <h3>Current State</h3>
+                    <p>Hundreds of opportunities stuck in "evaluating" stage because updating them requires opening each one individually in Salesforce.</p>
+                </div>
+
+                <div class="crysta-assessment">
+                    <div class="quote-block">
+                        <div class="quote-text">"It's a nightmare. Nothing gets done."</div>
+                        <div class="quote-author">— Crysta Ostiguy</div>
+                    </div>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">2 hours</div>
+                        <div class="impact-label">per week</div>
+                        <div class="impact-description">per manager in forced pipeline cleanup</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">$42,000-48,000</div>
+                        <div class="impact-label">per year</div>
+                        <div class="impact-description">(1,050-1,200 hours @ $40/hr)</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Beyond</div>
+                        <div class="impact-label">monthly view</div>
+                        <div class="impact-description">forecast accuracy suffers</div>
+                    </div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Salesloft functions as an engagement layer only—not a pipeline management system. All opportunity editing must happen in Salesforce.</p>
+                </div>
+
+                <div class="video-resources">
+                    <a href="https://hello.outreach.io/s/a4tM56sPXGY" class="video-link" data-title="Customizable Opportunities Grid">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Customizable Opportunities Grid</div>
+                                <div class="video-duration">8 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://hello.outreach.io/s/0VJBW6YdB3c" class="video-link" data-title="Real-Time Salesforce Updates">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Real-Time Salesforce Updates</div>
+                                <div class="video-duration">2 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #3: Reporting That Can't Answer "Who" or "Why" -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">3</div>
+                <div class="problem-title">
+                    <h2>Reporting That Can't Answer "Who" or "Why"</h2>
+                    <p class="problem-subtitle">Mitchell's team "triangulates" Salesforce and Salesloft data manually</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="current-state">
+                    <h3>Current State</h3>
+                    <p>Mitchell's team "triangulates" Salesforce and Salesloft data manually to answer basic questions.</p>
+                </div>
+
+                <div class="mitchell-quote">
+                    <div class="quote-block">
+                        <div class="quote-text">"All of our analytics are task and events in Salesforce... it's a lot more manual than this."</div>
+                        <div class="quote-author">— Mitchell Chapman</div>
+                    </div>
+                </div>
+
+                <div class="cannot-answer">
+                    <h4>Cannot Answer:</h4>
+                    <ul>
+                        <li>Which reps drive sequence results?</li>
+                        <li>Which sequence steps generate bookings?</li>
+                        <li>How do we replicate top performer strategies?</li>
+                    </ul>
+                </div>
+
+                <div class="shawn-observation">
+                    <div class="quote-block">
+                        <div class="quote-text">"Salesloft will supply numbers, but you can't click into it... you can click. That's huge. They don't have that."</div>
+                        <div class="quote-author">— Shawn Craig</div>
+                    </div>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">5-10 hours</div>
+                        <div class="impact-label">per week</div>
+                        <div class="impact-description">in manual reporting</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">$10,500</div>
+                        <div class="impact-label">per year</div>
+                        <div class="impact-description">(300 hours @ $35/hr)</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">No</div>
+                        <div class="impact-label">data-driven decisions</div>
+                        <div class="impact-description">coaching quality suffers</div>
+                    </div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Reporting architecture doesn't support drill-down from aggregate to rep to step level.</p>
+                </div>
+
+                <div class="video-resources">
+                    <a href="https://hello.outreach.io/s/A5pAnZyBTRM" class="video-link" data-title="Sequence Performance Report">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Sequence Performance Report</div>
+                                <div class="video-duration">7 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://hello.outreach.io/s/Va1LgbT78BM" class="video-link" data-title="Pipeline Generation Report">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Pipeline Generation Report</div>
+                                <div class="video-duration">7 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #4: Client Services Operating in the Dark Age -->
+    <section class="problem-section highlight-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">4</div>
+                <div class="problem-title">
+                    <h2>Client Services Operating in the Dark Age</h2>
+                    <p class="problem-subtitle">The Most Expensive Problem on This List</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="cs-teams">
+                    <div class="cs-team">
+                        <h3>Chelsea's Team (Implementation/Training - 26 people)</h3>
+                        <div class="current-process">
+                            <h4>Current Process:</h4>
+                            <ol>
+                                <li>Manually find Salesforce template</li>
+                                <li>Copy customer information into fields</li>
+                                <li>Send email manually</li>
+                                <li>After Zoom calls, copy AI summaries one-by-one into Salesforce</li>
+                                <li>Manually write synopsis if AI insufficient</li>
+                                <li>Check calendar tomorrow to remember what to do next</li>
+                                <li>Repeat for 47 accounts per rep</li>
+                            </ol>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"We're very manual. We have templates within Salesforce... truly grabbing those templates and filling in the blanks and manually sending them out. So there's no cadence really."</div>
+                            <div class="quote-author">— Chelsea Scott</div>
+                        </div>
+                    </div>
+
+                    <div class="cs-team">
+                        <h3>Danielle's Team (Account Management - 34 people)</h3>
+                        <div class="current-process">
+                            <h4>Current Process:</h4>
+                            <ul>
+                                <li>Maintain Excel spreadsheet of renewal dates</li>
+                                <li>"Pinging through dials all day long with not a lot of structure"</li>
+                                <li>Managing 160 accounts per rep without prioritization</li>
+                                <li>Track follow-ups in personal notes or separate spreadsheets</li>
+                                <li>Collaborate via shared Excel docs, then re-enter to Salesforce</li>
+                                <li>When reps leave, manually transfer context</li>
+                            </ul>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"It's just embarrassing to say out loud."</div>
+                            <div class="quote-author">— Danielle Garrett</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="impact-grid large-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">$81,250</div>
+                        <div class="impact-label">per year</div>
+                        <div class="impact-description">Implementation time waste (30 min/day × 26 reps)</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">$159,375</div>
+                        <div class="impact-label">per year</div>
+                        <div class="impact-description">Account Management time waste (45 min/day × 34 reps)</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">$240,625</div>
+                        <div class="impact-label">total annually</div>
+                        <div class="impact-description">Client Services manual work</div>
+                    </div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Salesloft isn't even deployed to Client Services. When Chelsea and Danielle explored it, Salesloft essentially said "you don't need us" because their use cases don't fit the rigid sales engagement model.</p>
+                </div>
+
+                <div class="video-resources">
+                    <a href="https://hello.outreach.io/s/vM1DI4LwJAA" class="video-link" data-title="Accounts Page - Context Aggregation">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Accounts Page - Context Aggregation & Risk Identification</div>
+                                <div class="video-duration">8 mins (starts 8:30)</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #5: Conversation Intelligence Underutilization -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">5</div>
+                <div class="problem-title">
+                    <h2>Conversation Intelligence Underutilization</h2>
+                    <p class="problem-subtitle">80% of demos recorded, usage: "Light coaching... skim transcripts"</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="current-state">
+                    <h3>Current State</h3>
+                    <ul>
+                        <li>80% of demos recorded (sales)</li>
+                        <li>All implementation calls recorded</li>
+                        <li>Usage: "Light coaching... skim transcripts"</li>
+                    </ul>
+                </div>
+
+                <div class="jb-quote">
+                    <div class="quote-block">
+                        <div class="quote-text">"Watching a demo for an hour, I want to pull the remaining hair out."</div>
+                        <div class="quote-author">— JB (Sales Director)</div>
+                    </div>
+                </div>
+
+                <div class="whats-missing">
+                    <h4>What's Missing:</h4>
+                    <ul>
+                        <li>Keyword search across all calls (Prime product mentions, competitor objections)</li>
+                        <li>Call libraries/playlists for training</li>
+                        <li>Lifecycle visibility (sales → implementation → account management)</li>
+                        <li>Wingback analysis (why customers churn/return)</li>
+                    </ul>
+                </div>
+
+                <div class="after-seeing-outreach">
+                    <h4>After Seeing Outreach:</h4>
+                    <div class="quote-block">
+                        <div class="quote-text">"After your calls, their AI is so much better... it'll sum up Zooms in real time. Generate follow-up in like 15 seconds."</div>
+                        <div class="quote-author">— Crysta Ostiguy</div>
+                    </div>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">Recorded content</div>
+                        <div class="impact-label">underutilized</div>
+                        <div class="impact-description">for coaching</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">New rep</div>
+                        <div class="impact-label">ramp time</div>
+                        <div class="impact-description">longer than necessary</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">No systematic</div>
+                        <div class="impact-label">competitive intelligence</div>
+                        <div class="impact-description">gathering</div>
+                    </div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Rhythm (Salesloft CI) was "forced" on the team (Crysta's words), took "months of tickets," and never resulted in a face-to-face support call. Basic transcription without robust AI search or lifecycle aggregation.</p>
+                </div>
+
+                <div class="video-resources">
+                    <a href="https://hello.outreach.io/s/PsFKlLmTVdA" class="video-link" data-title="KAIA Library - Keyword Search">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">KAIA Library - Keyword Search Across All Calls</div>
+                                <div class="video-duration">2 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://hello.outreach.io/s/2DFKc6vYtuQ" class="video-link" data-title="Advanced CI - Topic Tracking">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Advanced CI - Topic Tracking & Playlists</div>
+                                <div class="video-duration">10 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #6: Real Estate Agent Workflow Friction -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">6</div>
+                <div class="problem-title">
+                    <h2>Real Estate Agent Workflow Friction</h2>
+                    <p class="problem-subtitle">Salesloft's rigid structure doesn't match CINC's unique B2B motion</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="business-context">
+                    <h3>Business Model Context</h3>
+                    <p>CINC sells B2B to real estate agents, who operate like individual businesses. This isn't traditional corporate account hierarchy.</p>
+                </div>
+
+                <div class="the-problem">
+                    <h3>The Problem</h3>
+                    <p>Salesloft's rigid structure defaults to account name in grids and views—which is irrelevant for CINC's motion.</p>
+                </div>
+
+                <div class="crysta-quote">
+                    <div class="quote-block">
+                        <div class="quote-text">"The account name doesn't matter to us... I do not care about the account name."</div>
+                        <div class="quote-author">— Crysta Ostiguy</div>
+                    </div>
+                </div>
+
+                <div class="what-cinc-needs">
+                    <h4>What CINC Needs:</h4>
+                    <ul>
+                        <li>Contact name, created date, stage—not corporate account hierarchies</li>
+                        <li>Workflows that match sales process</li>
+                        <li>Reduced friction in daily operations</li>
+                        <li>No forced workarounds that break over time</li>
+                    </ul>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">Forced</div>
+                        <div class="impact-label">workflows</div>
+                        <div class="impact-description">that don't match sales process</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Extra clicks</div>
+                        <div class="impact-label">to find relevant</div>
+                        <div class="impact-description">information</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Custom workarounds</div>
+                        <div class="impact-label">that break</div>
+                        <div class="impact-description">over time</div>
+                    </div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Platform designed for traditional B2B account-based selling, not flexible enough for CINC's unique motion.</p>
+                </div>
+
+                <div class="crysta-conclusion">
+                    <div class="quote-block">
+                        <div class="quote-text">"You hit your head on ceiling with Salesloft... you can do it in Outreach."</div>
+                        <div class="quote-author">— Crysta Ostiguy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #7: Lead Activity Disappears at Conversion -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">7</div>
+                <div class="problem-title">
+                    <h2>Lead Activity Disappears at Conversion</h2>
+                    <p class="problem-subtitle">When leads convert to opportunities, all historical SDR activity disappears</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="shawn-issue">
+                    <h3>Shawn's Issue</h3>
+                    <p>When leads convert to opportunities, all historical SDR activity disappears from the AE's view.</p>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">AEs lack</div>
+                        <div class="impact-label">context</div>
+                        <div class="impact-description">from SDR work</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Must conduct</div>
+                        <div class="impact-label">re-discovery calls</div>
+                        <div class="impact-description">wasting time</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Duplicated</div>
+                        <div class="impact-label">effort</div>
+                        <div class="impact-description">and poor buyer experience</div>
+                    </div>
+                </div>
+
+                <div class="shawn-quote">
+                    <div class="quote-block">
+                        <div class="quote-text">"That's a huge problem with Salesloft that we could solve with Outreach."</div>
+                        <div class="quote-author">— Shawn Craig</div>
+                    </div>
+                </div>
+
+                <div class="why-cant-fix">
+                    <h4>Why Salesloft Can't Fix This</h4>
+                    <p>Lead-to-opportunity activity preservation not supported in current architecture.</p>
+                </div>
+
+                <div class="video-resource">
+                    <a href="https://hello.outreach.io/s/t1FPYKajMZc" class="video-link" data-title="Single Opportunity Deep Dive">
+                        <div class="video-card">
+                            <div class="video-icon">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">Single Opportunity Deep Dive with AI Search</div>
+                                <div class="video-duration">7 mins</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem #8: Vendor Relationship Deterioration -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-header">
+                <div class="problem-number">8</div>
+                <div class="problem-title">
+                    <h2>Vendor Relationship Deterioration</h2>
+                    <p class="problem-subtitle">Multiple unanswered inquiries and forced deployments</p>
+                </div>
+            </div>
+            
+            <div class="problem-content">
+                <div class="current-state">
+                    <h3>Current State</h3>
+                    <ul>
+                        <li>Multiple unanswered inquiries about Drift cancellation and renewal terms</li>
+                        <li>Forced Rhythm deployment with months of unresolved tickets</li>
+                        <li>No face-to-face support calls</li>
+                    </ul>
+                </div>
+
+                <div class="crysta-frustration">
+                    <div class="quote-block">
+                        <div class="quote-text">"Salesloft is kind of on the shit list right now... lack of communication is frustrating."</div>
+                        <div class="quote-author">— Crysta Ostiguy</div>
+                    </div>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-metric">Uncertainty</div>
+                        <div class="impact-label">around February renewal</div>
+                        <div class="impact-description">planning</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Risk in</div>
+                        <div class="impact-label">vendor relationship</div>
+                        <div class="impact-description">trust eroded</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-metric">Unable to plan</div>
+                        <div class="impact-label">technology roadmap</div>
+                        <div class="impact-description">after security breach</div>
+                    </div>
+                </div>
+
+                <div class="why-this-matters">
+                    <h4>Why This Matters</h4>
+                    <p>When evaluating enterprise software, vendor partnership quality matters as much as feature set. This relationship cannot be repaired through sales promises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary-section">
+        <div class="container">
+            <h2>Total Quantified Annual Impact</h2>
+            <div class="impact-summary">
+                <div class="impact-category">
+                    <div class="category-title">Manual Data Management</div>
+                    <div class="category-amount">$27,075</div>
+                </div>
+                <div class="impact-category">
+                    <div class="category-title">Pipeline Management</div>
+                    <div class="category-amount">$42,000-48,000</div>
+                </div>
+                <div class="impact-category">
+                    <div class="category-title">Reporting Inefficiency</div>
+                    <div class="category-amount">$10,500</div>
+                </div>
+                <div class="impact-category">
+                    <div class="category-title">Client Services Manual Work</div>
+                    <div class="category-amount">$240,625</div>
+                </div>
+                <div class="impact-category total">
+                    <div class="category-title">Total Hard Costs</div>
+                    <div class="category-amount">$324,200/year</div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="stakeholders.html" class="cta-button">See Who's Impacted</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/interactive-elements.js"></script>
+</body>
+</html>

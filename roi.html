@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Analysis - CINC Business Case</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/outreach-theme.css">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CINC</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Executive Summary</a>
+                <a href="problems.html" class="nav-link">Problems</a>
+                <a href="stakeholders.html" class="nav-link">Stakeholders</a>
+                <a href="solution.html" class="nav-link">Solution</a>
+                <a href="roi.html" class="nav-link active">ROI</a>
+                <a href="implementation.html" class="nav-link">Implementation</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>ROI Analysis - Conservative, Quantified, Tied to Real Workflows</h1>
+            <p class="page-subtitle">This isn't fluffy ROI. Every dollar is tied to a specific workflow transformation with conservative time estimates validated across seven evaluation calls.</p>
+        </div>
+    </section>
+
+    <!-- ROI Framework Overview -->
+    <section class="roi-overview">
+        <div class="container">
+            <div class="roi-summary">
+                <div class="roi-metric">
+                    <div class="metric-value">$624,000+</div>
+                    <div class="metric-label">Total Annual Value</div>
+                </div>
+                <div class="roi-metric">
+                    <div class="metric-value">$106,080</div>
+                    <div class="metric-label">Annual Investment</div>
+                </div>
+                <div class="roi-metric highlight">
+                    <div class="metric-value">5.9x</div>
+                    <div class="metric-label">ROI Multiple</div>
+                </div>
+                <div class="roi-metric">
+                    <div class="metric-value">&lt; 6 months</div>
+                    <div class="metric-label">Payback Period</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section class="roi-calculator-section">
+        <div class="container">
+            <h2>Interactive ROI Calculator</h2>
+            <p class="section-subtitle">Adjust assumptions to see how ROI changes</p>
+            
+            <div class="calculator-container">
+                <div class="calculator-controls">
+                    <div class="control-group">
+                        <label for="time-savings">Time Savings (% of base case)</label>
+                        <input type="range" id="time-savings" min="50" max="150" value="100" class="slider">
+                        <span class="slider-value">100%</span>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="conversion-lift">Conversion Lift (% of base case)</label>
+                        <input type="range" id="conversion-lift" min="50" max="200" value="100" class="slider">
+                        <span class="slider-value">100%</span>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="cs-adoption">Client Services Adoption (% of team)</label>
+                        <input type="range" id="cs-adoption" min="50" max="100" value="100" class="slider">
+                        <span class="slider-value">100%</span>
+                    </div>
+                </div>
+                
+                <div class="calculator-results">
+                    <div class="result-metric">
+                        <div class="result-value" id="roi-result">5.9x</div>
+                        <div class="result-label">ROI Multiple</div>
+                    </div>
+                    <div class="result-metric">
+                        <div class="result-value" id="payback-result">2.0</div>
+                        <div class="result-label">Payback (months)</div>
+                    </div>
+                    <div class="result-metric">
+                        <div class="result-value" id="annual-value">$624K</div>
+                        <div class="result-label">Annual Value</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hard Cost Savings Breakdown -->
+    <section class="cost-savings-section">
+        <div class="container">
+            <h2>Hard Cost Savings Breakdown</h2>
+            <p class="section-subtitle">Conservative time estimates validated across seven evaluation calls</p>
+            
+            <div class="savings-cards">
+                <!-- Manual Data Management -->
+                <div class="savings-card expandable-card">
+                    <div class="card-header">
+                        <div class="savings-info">
+                            <h3>1. Manual Data Management Elimination</h3>
+                            <p class="savings-amount">$27,075/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="savings-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>20-30 min/day per SDR/BDR in manual imports between Salesloft and Salesforce</p>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Calculation:</h4>
+                                <ul>
+                                    <li>13 SDR/BDRs × 25 minutes/day × 250 days/year = 1,083 hours</li>
+                                    <li>1,083 hours × $25/hour = <strong>$27,075/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Assumes only 25 minutes/day (Crysta mentioned "a few times a day")</li>
+                                    <li>Doesn't account for data reconciliation errors requiring rework</li>
+                                    <li>Doesn't include sequence delays from missed imports</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-savings">
+                                <h4>What Drives This Savings:</h4>
+                                <p>Bilateral Salesforce integration eliminates manual CSV exports/imports entirely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pipeline Management -->
+                <div class="savings-card expandable-card">
+                    <div class="card-header">
+                        <div class="savings-info">
+                            <h3>2. Pipeline Management Time Recovery</h3>
+                            <p class="savings-amount">$42,000-48,000/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="savings-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>2 hours/week forced pipeline cleanup per manager because inline editing doesn't exist</p>
+                            </div>
+                            
+                            <div class="crysta-quote">
+                                <div class="quote-block">
+                                    <div class="quote-text">"It's a nightmare. Nothing gets done."</div>
+                                    <div class="quote-author">— Crysta Ostiguy</div>
+                                </div>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Calculation:</h4>
+                                <ul>
+                                    <li>7 managers × 2 hours/week × 50 weeks/year = 700 hours</li>
+                                    <li>Additional rep time avoiding pipeline hygiene: ~350 hours/year</li>
+                                    <li>Total: 1,050-1,200 hours × $40/hour = <strong>$42,000-48,000/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Doesn't quantify forecast accuracy improvements</li>
+                                    <li>Doesn't account for leadership time spent chasing pipeline data</li>
+                                    <li>Doesn't include opportunity cost of poor pipeline visibility</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-savings">
+                                <h4>What Drives This Savings:</h4>
+                                <p>Opportunity Grid with inline editing, mass updates, and custom saved views.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reporting & Analytics -->
+                <div class="savings-card expandable-card">
+                    <div class="card-header">
+                        <div class="savings-info">
+                            <h3>3. Reporting & Analytics Efficiency</h3>
+                            <p class="savings-amount">$10,500/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="savings-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>Mitchell's team "triangulates" Salesforce + Salesloft data weekly</p>
+                            </div>
+                            
+                            <div class="mitchell-quote">
+                                <div class="quote-block">
+                                    <div class="quote-text">"All of our analytics are task and events in Salesforce... it's a lot more manual than this."</div>
+                                    <div class="quote-author">— Mitchell Chapman</div>
+                                </div>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Calculation:</h4>
+                                <ul>
+                                    <li>Current: 6 hours/week in manual reporting</li>
+                                    <li>Future: 1-2 hours/week in analysis only</li>
+                                    <li>Time saved: 4-5 hours/week × 50 weeks = 250-300 hours</li>
+                                    <li>300 hours × $35/hour = <strong>$10,500/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Doesn't quantify value of data-driven coaching decisions</li>
+                                    <li>Doesn't include strategic value of replicating top performers</li>
+                                    <li>Doesn't account for executive team time spent requesting custom reports</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-savings">
+                                <h4>What Drives This Savings:</h4>
+                                <p>Pre-built dashboards with drill-down capability (aggregate → rep → step → individual email/call).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template Filling & Manual Synopsis -->
+                <div class="savings-card expandable-card">
+                    <div class="card-header">
+                        <div class="savings-info">
+                            <h3>4. Template Filling & Manual Synopsis</h3>
+                            <p class="savings-amount">$81,250/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="savings-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>Chelsea's 26-person team manually fills Salesforce templates and copies Zoom AI summaries one-by-one</p>
+                            </div>
+                            
+                            <div class="chelsea-quote">
+                                <div class="quote-block">
+                                    <div class="quote-text">"We're very manual. We have templates within Salesforce... truly grabbing those templates and filling in the blanks."</div>
+                                    <div class="quote-author">— Chelsea Scott</div>
+                                </div>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Calculation:</h4>
+                                <ul>
+                                    <li>26 implementation specialists × 30 minutes/day × 250 days/year = 3,250 hours</li>
+                                    <li>3,250 hours × $25/hour = <strong>$81,250/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Only accounts for template/summary time, not total manual workflow</li>
+                                    <li>Doesn't quantify customer experience improvement</li>
+                                    <li>Doesn't include time spent searching for sales context</li>
+                                    <li>47 accounts per rep with 2-3 month lifecycle = massive scale opportunity</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-savings">
+                                <h4>What Drives This Savings:</h4>
+                                <p>Automated sequences with Salesforce data auto-population, AI call summaries, task-driven workflows, and sales history visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Follow-Up Tracking & Excel Management -->
+                <div class="savings-card expandable-card">
+                    <div class="card-header">
+                        <div class="savings-info">
+                            <h3>5. Follow-Up Tracking & Excel Management</h3>
+                            <p class="savings-amount">$159,375/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="savings-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>Danielle's 34-person team uses Excel spreadsheets for renewal tracking, manual Salesforce re-entry, and follow-up coordination</p>
+                            </div>
+                            
+                            <div class="danielle-quote">
+                                <div class="quote-block">
+                                    <div class="quote-text">"They're just pinging through dials all day long with not a lot of structure... It's just embarrassing to say out loud."</div>
+                                    <div class="quote-author">— Danielle Garrett</div>
+                                </div>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Calculation:</h4>
+                                <ul>
+                                    <li>34 account managers × 45 minutes/day × 250 days/year = 6,375 hours</li>
+                                    <li>6,375 hours × $25/hour = <strong>$159,375/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Doesn't quantify churn prevented by proactive at-risk outreach</li>
+                                    <li>Doesn't include David's time spent chasing renewal pipeline data</li>
+                                    <li>Doesn't account for context loss when reps leave (4 hours per transition × 10 transitions = 40 hours @ $100/hour = $4,000)</li>
+                                    <li>160 accounts per rep = renewal leakage risk</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-savings">
+                                <h4>What Drives This Savings:</h4>
+                                <p>Automated renewal triggers, health score prioritization, structured follow-up cadences, and context preservation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Context Loss in Account Transitions -->
+                <div class="savings-card expandable-card">
+                    <div class="card-header">
+                        <div class="savings-info">
+                            <h3>6. Context Loss in Account Transitions</h3>
+                            <p class="savings-amount">$4,000/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="savings-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>When reps leave, manual digging through Salesforce + Excel to transfer context</p>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Calculation:</h4>
+                                <ul>
+                                    <li>4 hours per transition × 10 transitions/year = 40 hours</li>
+                                    <li>40 hours × $100/hour (management time) = <strong>$4,000/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Only accounts for direct transition time</li>
+                                    <li>Doesn't quantify revenue risk from poor transitions</li>
+                                    <li>Doesn't include new rep ramp time without context</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-savings">
+                                <h4>What Drives This Savings:</h4>
+                                <p>Complete account history aggregation (sales + implementation + account management) in single view.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total-savings">
+                <h3>Total Hard Cost Savings: $324,200/year</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conservative Revenue Impact -->
+    <section class="revenue-impact-section">
+        <div class="container">
+            <h2>Conservative Revenue Impact</h2>
+            <p class="section-subtitle">Conservative assumptions validated across evaluation calls</p>
+            
+            <div class="revenue-cards">
+                <!-- Manager Coaching Productivity -->
+                <div class="revenue-card expandable-card">
+                    <div class="card-header">
+                        <div class="revenue-info">
+                            <h3>7. Manager Coaching Productivity</h3>
+                            <p class="revenue-amount">~$100,000/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="revenue-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <p>JB refuses to review hour-long demo recordings, limiting coaching effectiveness</p>
+                            </div>
+                            
+                            <div class="jb-quote">
+                                <div class="quote-block">
+                                    <div class="quote-text">"Watching a demo for an hour, I want to pull the remaining hair out."</div>
+                                    <div class="quote-author">— JB (Sales Director)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="after-seeing-outreach">
+                                <h4>After Seeing Outreach:</h4>
+                                <div class="quote-block">
+                                    <div class="quote-text">"After your calls, their AI is so much better... it'll sum up Zooms in real time."</div>
+                                    <div class="quote-author">— Crysta Ostiguy</div>
+                                </div>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Conservative Impact Assumption:</h4>
+                                <ul>
+                                    <li>80% of demos currently recorded</li>
+                                    <li>If CI drives 2% conversion lift through systematic coaching</li>
+                                    <li>SDR team books ~1,000 qualified opportunities/year</li>
+                                    <li>2% lift = 20 additional opportunities</li>
+                                    <li>Average deal size: $5,000</li>
+                                    <li><strong>Revenue Impact: ~$100,000/year</strong></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Only applies lift to SDR team, not AE demos</li>
+                                    <li>Doesn't quantify value of keyword tracking (Prime product, competitor mentions)</li>
+                                    <li>Doesn't include new rep ramp time reduction</li>
+                                    <li>Doesn't account for consistent messaging impact</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-impact">
+                                <h4>What Drives This Impact:</h4>
+                                <p>AI call summaries, keyword search, playlists, topic tracking, and lifecycle aggregation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speed-to-Lead & Renewal Follow-Up -->
+                <div class="revenue-card expandable-card">
+                    <div class="card-header">
+                        <div class="revenue-info">
+                            <h3>8. Speed-to-Lead & Renewal Follow-Up</h3>
+                            <p class="revenue-amount">~$200,000/year</p>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="revenue-details">
+                            <div class="current-state">
+                                <h4>Current State:</h4>
+                                <ul>
+                                    <li>Sales: Manual imports cause lead response delays</li>
+                                    <li>CS: Renewal follow-ups tracked manually, easily forgotten</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="calculation">
+                                <h4>Conservative Impact Assumptions:</h4>
+                                
+                                <div class="sales-side">
+                                    <h5>Sales Side:</h5>
+                                    <ul>
+                                        <li>10% speed-to-lead improvement from bilateral sync</li>
+                                        <li>Drives 5% SDR conversion lift</li>
+                                        <li>6 SDRs × 600 calls/day collectively</li>
+                                        <li>Current conversion: ~2%</li>
+                                        <li>5% lift on 2% = 0.1% absolute improvement</li>
+                                        <li>600 calls/day × 250 days × 0.1% = 150 additional conversions</li>
+                                        <li>Average deal size: $5,000</li>
+                                        <li><strong>Sales Impact: ~$100,000</strong></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="cs-side">
+                                    <h5>CS Side:</h5>
+                                    <ul>
+                                        <li>Automated renewal outreach prevents churn leakage</li>
+                                        <li>Proactive at-risk identification retains 2-3 accounts/year</li>
+                                        <li>Average account value: $50,000-100,000</li>
+                                        <li><strong>CS Impact: ~$100,000</strong></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="combined-impact">
+                                    <p><strong>Combined Revenue Impact: $200,000/year</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="why-conservative">
+                                <h4>Why This is Conservative:</h4>
+                                <ul>
+                                    <li>Only accounts for incremental improvements, not transformation</li>
+                                    <li>Doesn't quantify customer experience improvements</li>
+                                    <li>Doesn't include expansion revenue opportunities from better CS execution</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="what-drives-impact">
+                                <h4>What Drives This Impact:</h4>
+                                <p>Bilateral sync eliminating lead delays + automated renewal triggers with health scoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total-revenue">
+                <h3>Total Conservative Revenue Impact: $300,000+/year</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Total Business Value Summary -->
+    <section class="business-value-section">
+        <div class="container">
+            <h2>Total Business Value Summary</h2>
+            
+            <div class="value-breakdown">
+                <div class="value-category">
+                    <div class="value-amount">$324,200</div>
+                    <div class="value-label">Hard Cost Savings</div>
+                    <div class="value-description">per year</div>
+                </div>
+                <div class="value-category">
+                    <div class="value-amount">$300,000+</div>
+                    <div class="value-label">Revenue Impact</div>
+                    <div class="value-description">per year</div>
+                </div>
+                <div class="value-category total">
+                    <div class="value-amount">$624,000+</div>
+                    <div class="value-label">Total Annual Value</div>
+                    <div class="value-description">conservative estimate</div>
+                </div>
+            </div>
+
+            <div class="investment-summary">
+                <div class="investment-item">
+                    <div class="investment-amount">$106,080</div>
+                    <div class="investment-label">Annual Investment</div>
+                </div>
+                <div class="investment-item">
+                    <div class="investment-amount">5.9x</div>
+                    <div class="investment-label">ROI Multiple</div>
+                </div>
+                <div class="investment-item">
+                    <div class="investment-amount">2.0</div>
+                    <div class="investment-label">Payback Period (months)</div>
+                </div>
+            </div>
+
+            <div class="three-year-value">
+                <h3>3-Year Value:</h3>
+                <ul>
+                    <li>Total Investment: $318,240 (3 years × $106,080)</li>
+                    <li>Total Value: $1,872,000 (3 years × $624,000)</li>
+                    <li><strong>Net Value: $1,553,760</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Value -->
+    <section class="strategic-value-section">
+        <div class="container">
+            <h2>Strategic Value (Not Yet Quantified)</h2>
+            
+            <div class="strategic-cards">
+                <div class="strategic-card">
+                    <h3>Renewal Pipeline Visibility</h3>
+                    <p>David currently struggles with real-time renewal tracking. Proactive at-risk identification prevents revenue leakage.</p>
+                </div>
+                
+                <div class="strategic-card">
+                    <h3>Client Services Scalability</h3>
+                    <p>Current manual processes prevent team growth. Automation enables headcount efficiency as customer base grows.</p>
+                </div>
+                
+                <div class="strategic-card">
+                    <h3>Conversation Intelligence Adoption</h3>
+                    <ul>
+                        <li>Lifecycle visibility (sales → implementation → account management)</li>
+                        <li>Wingback analysis systematized</li>
+                        <li>Product launch training (Prime) accelerated</li>
+                    </ul>
+                </div>
+                
+                <div class="strategic-card">
+                    <h3>Competitive Intelligence</h3>
+                    <ul>
+                        <li>Keyword tracking across all departments</li>
+                        <li>Objection pattern identification</li>
+                        <li>Best practice replication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Context -->
+    <section class="pricing-context-section">
+        <div class="container">
+            <h2>Pricing Context</h2>
+            
+            <div class="license-breakdown">
+                <div class="license-section">
+                    <h3>Sales (40 licenses)</h3>
+                    <div class="license-details">
+                        <div class="license-item">
+                            <span class="license-count">14</span>
+                            <span class="license-name">Base (SDR/BDR)</span>
+                            <span class="license-desc">Engagement only</span>
+                        </div>
+                        <div class="license-item">
+                            <span class="license-count">14-17</span>
+                            <span class="license-name">Full (AEs)</span>
+                            <span class="license-desc">Engagement + CI + Deal Management</span>
+                        </div>
+                        <div class="license-item">
+                            <span class="license-count">8</span>
+                            <span class="license-name">Admin/Leadership</span>
+                            <span class="license-desc">Complete visibility</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="license-section">
+                    <h3>Client Services (60 licenses)</h3>
+                    <div class="license-details">
+                        <div class="license-item">
+                            <span class="license-count">26</span>
+                            <span class="license-name">Implementation/Training</span>
+                            <span class="license-desc">CI only (reduced/no engagement) - <strong>100% discount = $0</strong></span>
+                        </div>
+                        <div class="license-item">
+                            <span class="license-count">34</span>
+                            <span class="license-name">Account Management</span>
+                            <span class="license-desc">Full licenses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="annual-costs">
+                <h3>Annual Costs:</h3>
+                <ul>
+                    <li>Outreach Engage (62 licenses): $66,960 (25% discount from $89,280)</li>
+                    <li>Outreach Meet (48 licenses): $25,920 (25% discount from $34,560)</li>
+                    <li>Outreach Deal (48 licenses): $10,800 (25% discount from $14,400)</li>
+                    <li>Outreach Admin (8 licenses): $2,400 (79.2% discount from $11,520)</li>
+                    <li>Outreach Engage (26 licenses): <strong>$0 (100% discount)</strong></li>
+                </ul>
+                
+                <div class="total-cost">
+                    <p><strong>Recurring Annual Cost: $106,080</strong></p>
+                    <p>Year 1 Total Investment: $131,580 (includes $25,500 implementation)</p>
+                </div>
+            </div>
+
+            <div class="value-positioning">
+                <h3>Value Positioning:</h3>
+                <ul>
+                    <li>Annual Cost: $106,080</li>
+                    <li>Annual Value: $624,000+</li>
+                    <li><strong>ROI Multiple: 5.9x</strong></li>
+                </ul>
+            </div>
+
+            <div class="crysta-direction">
+                <div class="quote-block">
+                    <div class="quote-text">"Best way to get through to my CRO is to tie an ROI or dollar amount to it."</div>
+                    <div class="quote-author">— Crysta Ostiguy's Direction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <a href="implementation.html" class="cta-button">See Implementation Plan</a>
+        </div>
+    </section>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/interactive-elements.js"></script>
+</body>
+</html>
